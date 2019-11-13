@@ -1,0 +1,20 @@
+{
+  "name": "dallas-code-along",
+  "version": "1.0.0",
+  "description": "developer blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMoney-216/dallas-code-along.git"
+  },
+  "author": "Justin Maney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMoney-216/dallas-code-along/issues"
+  },
+  "homepage": "https://github.com/JMoney-216/dallas-code-along#readme"
+}

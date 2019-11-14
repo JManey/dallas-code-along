@@ -1,15 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const model = require('../models/index')
+const indexCtrl = require('../controllers/index');
 
-router.get('/', function(req, res) {
-    res.render('index', {
-        user: model.getUserName(),
-        post: model.getBlogPost()
-    })
-});
-
-
+router.get('/', indexCtrl.getAll);
 
 
 module.exports = router;

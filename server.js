@@ -2,11 +2,11 @@
 const express = require('express');
 const app = express();
 // const indexRouter = require('./routes/index');
-const blogsRouter = require('./routes/blogs')
 require('./config/database');
 // configure express app
 app.set('view engine', 'ejs');
 
+const blogsRouter = require('./routes/blogs')
 // app.use('/', indexRouter);
 app.use('/blogs', blogsRouter);
 

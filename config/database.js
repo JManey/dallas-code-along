@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  'mongodb://localhose/myDeveloperJourney', {
+  'mongodb://localhost/myDeveloperJourney', {
     useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -14,7 +14,7 @@ db.on('connected', function() {
   console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
 });
 
-db.on('error', function() {
-  console.log(`MongoDB error connecting: ${err}`)
-})
+// db.on('error', function() {
+//   console.log(`MongoDB error connecting: ${err}`)
+// })
 

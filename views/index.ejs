@@ -8,14 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>Hello <%= user %></h1>
+        <h1>My Journey Blog</h1>
         <p>This is my developer blog.</p>
     </header>
     <main>
         <section>
-            <p>
-                <%= post %>
-            </p>
+            <% blogs.forEach(function(blog) { %>
+                <article>
+                    <h2> <%= blog.title %></h2>
+                    <p> <%= blog.post %></p>
+                    <small> <%= blog.published.toLocateString() %></small>
+                </article>
+            <% }) %>
         </section>
     </main>
 

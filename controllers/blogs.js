@@ -6,6 +6,11 @@ module.exports = {
 }
 
 function index(req, res) {
-    const blogs = Blog.getAll();
-    res.render('index', {blogs})
+    Blog.find({}, function(err, blogs) {
+        if(err) {
+            console.log(err);
+            res.redirect('/');
+        }
+        res.render('index', { blogs });
+    });
 }

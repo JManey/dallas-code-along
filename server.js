@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 
 const blogsRouter = require('./routes/blogs')
 // app.use('/', indexRouter);
-app.use('/blogs', blogsRouter);
+app.use('/', blogsRouter);
 
 // port for listener
 const port = 3000

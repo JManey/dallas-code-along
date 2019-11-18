@@ -19,6 +19,7 @@
   "homepage": "https://github.com/JMoney-216/dallas-code-along#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.11"
   }
 }

@@ -1,13 +1,18 @@
 // require modules
 const express = require('express');
 const app = express();
-const indexRouter = require('./routes/index');
+// const indexRouter = require('./routes/index');
+const blogsRouter = require('./routes/blogs')
+require('./config/database');
 // configure express app
 app.set('view engine', 'ejs');
-app.use('/', indexRouter);
+
+// app.use('/', indexRouter);
+app.use('/blogs', blogsRouter);
 
 // port for listener
-const port = 3000;
+const port = 3000
+;
 
 
 
